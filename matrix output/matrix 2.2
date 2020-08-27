@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+	int metrix[2][2];
+	int output;
+	int i,j;
+	
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter metrix[%d][%d] : " ,i,j);
+			scanf("%d",&metrix[i][j]);
+		}
+	}
+	output = (metrix[0][0]*metrix[1][1]) - (metrix[0][1]*metrix[1][0]);
+	printf("Metrix output = %d",output);
+	
+	return 0;
+}
